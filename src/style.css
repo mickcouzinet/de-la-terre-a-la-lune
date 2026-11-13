@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background-color: #f2f3f5;
+}
+
+a {
+  color: #1a5fb4;
+}
+
+header {
+  background-color: #1f2937;
+  color: white;
+  padding: 24px 20px;
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+header p {
+  margin: 0;
+  color: #d1d5db;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #dcdfe4;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.intro {
+  color: #555;
+  margin-top: -6px;
+}
+
+.erreur {
+  color: #b42318;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid #1a5fb4;
+  border-radius: 4px;
+  background-color: #1a5fb4;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #154c91;
+}
+
+.iss-contenu {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+#carte {
+  height: 380px;
+  border: 1px solid #dcdfe4;
+  margin-bottom: 10px;
+}
+
+.iss-infos table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.iss-infos th,
+.iss-infos td {
+  text-align: left;
+  padding: 6px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.iss-infos th {
+  font-weight: normal;
+  color: #555;
+}
+
+.verne {
+  background-color: #f7f7f9;
+  border-left: 3px solid #1a5fb4;
+  padding: 10px;
+}
+
+.tableau-scroll {
+  overflow-x: auto;
+}
+
+.tableau {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.tableau th,
+.tableau td {
+  border: 1px solid #dcdfe4;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tableau thead th {
+  background-color: #f2f3f5;
+}
+
+.tableau tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.vu-juste { color: #1e7b34; font-weight: bold; }
+.presque { color: #9a6700; font-weight: bold; }
+.rate { color: #b42318; font-weight: bold; }
+.clin-doeil { color: #1a5fb4; font-weight: bold; }
+
+.nasa-contenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#form-apod {
+  margin-bottom: 10px;
+}
+
+#apod img,
+#apod iframe {
+  width: 100%;
+  border: 0;
+}
+
+#apod iframe {
+  aspect-ratio: 16 / 9;
+}
+
+.danger {
+  color: #b42318;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  padding: 10px 20px 30px;
+}
+
+@media (max-width: 800px) {
+  .iss-contenu,
+  .nasa-contenu {
+    grid-template-columns: 1fr;
+  }
+
+  #carte {
+    height: 300px;
+  }
+
+  #comparatif .tableau {
+    min-width: 700px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+}
